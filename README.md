@@ -19,4 +19,7 @@ mkdir arxiv{0,1,2}
 # sync any new changes since the date of the last sync
 ./oai-sync.pl --baseURL=http://export.arxiv.org/oai2 --metadataPrefix=arXiv \
               --dumpDir=./arxiv2/ --from='2015-03-14'
+
+# split into individual records
+for F in ./arxiv*/*.xml; do [ -s $F ] && ./oai-split.sh < $F; done
 ```
