@@ -1,4 +1,4 @@
-This is a quick and dirty script for harvesting metadata from an OAI repository.
+This is a quick and dirty script for harvesting metadata from an [OAI-PMH](https://en.wikipedia.org/wiki/Open_Archives_Initiative_Protocol_for_Metadata_Harvesting) enabled repository.
 
 It relies on the `Net::OAI::Harvester` perl module, and is derived from the
 `oai-listrecords` script provided in the examples for that library.
